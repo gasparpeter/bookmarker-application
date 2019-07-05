@@ -13,6 +13,7 @@ function saveBookmark(e){
         return false;
     }
 
+    
     var bookmark = {
         name: siteName,
         url: siteUrl
@@ -33,7 +34,7 @@ function saveBookmark(e){
 
         bookmarks.push(bookmark);
 
-        
+
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     }
 
